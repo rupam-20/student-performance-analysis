@@ -15,7 +15,7 @@ Identify patterns and correlations between different subject scores.
 Provide visual insights that can help educators and policymakers improve academic outcomes.
 
 📂 Dataset Description
-File: StudentsPerformance (1).csv
+File: StudentsPerformance (1).csv 
 
 Columns:
 | Column Name                   | Description                                             |
