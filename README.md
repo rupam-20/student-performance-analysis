@@ -1,5 +1,8 @@
 # student-performance-analysis
 Students Performance Dataset Analysis
+
+
+
 📌 Overview
 This project analyzes the StudentsPerformance dataset to explore the relationships between students' demographics, test preparation, and their scores in Math, Reading, and Writing.
 The dataset is publicly available and contains performance records of high school students.
