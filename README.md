@@ -17,15 +17,17 @@ Provide visual insights that can help educators and policymakers improve academi
 File: StudentsPerformance (1).csv
 
 Columns:
-Column Name	Description
-gender	Gender of the student (male/female)
-race/ethnicity	Ethnic group of the student
-parental level of education	Highest education level achieved by the parents
-lunch	Type of lunch (standard/free/reduced)
-test preparation course	Whether the student completed a test preparation course
-math score	Score in mathematics (0–100)
-reading score	Score in reading (0–100)
-writing score	Score in writing (0–100)
+| Column Name                   | Description                                             |
+| ----------------------------- | ------------------------------------------------------- |
+| `gender`                      | Gender of the student (`male`/`female`)                 |
+| `race/ethnicity`              | Ethnic group of the student                             |
+| `parental level of education` | Highest education level achieved by the parents         |
+| `lunch`                       | Type of lunch (`standard`/`free/reduced`)               |
+| `test preparation course`     | Whether the student completed a test preparation course |
+| `math score`                  | Score in mathematics (0–100)                            |
+| `reading score`               | Score in reading (0–100)                                |
+| `writing score`               | Score in writing (0–100)                                |
+
 
 📊 Analysis Performed
 Basic Data Exploration
@@ -43,7 +45,6 @@ Visualizing pairwise relationships between scores.
 Correlation Matrix
 
 Heatmap showing correlations between numeric features.
-
 💡 Insights
 Reading & Writing Scores: Strong positive correlation (students who perform well in one tend to perform well in the other).
 
@@ -56,14 +57,13 @@ Lunch Type Effect: Students with standard lunch generally perform better than th
 🛠️ Requirements
 Install dependencies:
 
-bash
-Copy
-Edit
 pip install pandas matplotlib seaborn
+
 ▶️ How to Run
 python
-Copy
-Edit
+Copy code
+
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -74,8 +74,8 @@ df = pd.read_csv("StudentsPerformance (1).csv")
 # Correlation matrix
 corr_matrix = df.corr(numeric_only=True)
 sns.heatmap(corr_matrix, annot=True, cmap="coolwarm")
-plt.title("Correlation Matrix")
 plt.show()
+
 📈 Example Output
 Correlation Matrix Heatmap: Shows strong positive correlation between reading and writing scores.
 
