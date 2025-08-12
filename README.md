@@ -1,5 +1,8 @@
 📊 Student Marks Histogram
-Project Title
+
+
+Project Title:
+
 Student Marks Histogram
 
 Problem Statement
